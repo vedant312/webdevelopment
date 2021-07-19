@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>
+
+        </title>
+    <style>
+        body{
+            background-image: linear-gradient(gray,white);
+        }
+        .detail{
+            color:aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="mailto:vedantdangi333@outlook.com" method="POST">
+        <h3 class="detail">Name :</h3>
+        <input type = "text" required placeholder="Your Full Name"><br>
+        <h3 class="detail">IITK EmailID :</h3>
+        <input type="email" required placeholder="nameYr@iitk.ac.in">
+        <br>
+        <h3 class="detail">Roll Number :</h3>
+        <input type="number" required placeholder="Your IITK Roll number">
+        <br>
+        <h3 class="detail">Branch :</h3>
+        <input type="text" required>
+        <br><br>
+        <hr>
+        <br>
+        <h3>You are vaccinated? :</h3>
+        <input type="radio" required name="vaccinated" value="yes" id="vaccinated-y">
+        <label for="vaccinated-y">YES</label>
+        <input type="radio" name="vaccinated" value="no" id="vaccinated-n">
+        <label for="vaccinated-n">NO</label>
+        <br>
+        <h3>If you are vaccinated then how many dose you have taken ?</h3>
+        <input type="radio" required name="dose" value="first" id="dose-f">
+        <label for="dose-f">FIRST</label>
+        <input type="radio" name="dose" value="second" id="dose-s">
+        <label for="dose-s">SECOND</label>
+        <br>
+        <h3>If you are not vaccinated,Why ?</h3>
+        <select name="reason" id="reason" required>
+            <option>--Select a Reason--</option>
+            <option>Vaccine not available</option>
+            <option>Slot not available</option>
+            <option>Infeacted with COVID</option>
+            <option>Other</option>
+        </select><br>
+        <h3>If you got first dose when will you get second dose ?</h3>
+        <input type="date" required ><br>
+        <p style=color:tomato;font-size:10px>*Thankyou for your Response</p>
+        <input type="submit" value="Submit Form" >
+        <input type="reset" value="Reset Form" >
+    </form>
+</body>
+</html>
